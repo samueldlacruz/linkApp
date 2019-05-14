@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>linkApp</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-dark bg-dark">
+      <a class="navbar-brand ml-5" href="#">linkApp</a>
+    </nav>
+  </header>
+  <section>
+   <div class="jumbotron jumbotron-fluid"">
+    <div class="container mt-5 ">
+      <h2 class="display-4">marcados de link</h2>
+      <p class="lead">agrega el link de un website que quieres recordar.</p>
+      <hr class="my-4">
+      <form id="formulario">
+        <label for="basic-url">NOMBRE</label>
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon3">nombre del website</span>
+          </div>
+          <input type="text" class="form-control" id="nombre" aria-describedby="basic-addon3">
+        </div>
+        <label for="basic-url">URL</label>
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon3">https://example.com/</span>
+          </div>
+          <input type="url" class="form-control" id="url" aria-describedby="basic-addon3">
+        </div>
+        <button type="submit" class="btn btn-primary btn-lg">guardar</button>
+      </form>
+      </div>
+    </div>
+    <div id="listaLink" class="container mt-3">
+    </div>
+  </section>
+  <footer class="container"> 
+    <p>linkApp 2019 &copy;</p>
+  </footer>
+<!--<script src="js/bootstrap.min.js"></script>-->
+<script src="js/main.js"></script>
+</body>
+</html>
